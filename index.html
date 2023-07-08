@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="main.css">
     <!-- Referencia de la hoja de estilo de Css -->
     <!-- CSS BEM-->
-    <link rel="stylesheet" href="assets/css/menu/menu.css">
+   <!--  <link rel="stylesheet" href="assets/css/menu/menu.css">
     <link rel="stylesheet" href="assets/css/menu/menu-header.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-nav.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-nav.css"> -->
 
     <link rel="stylesheet" href="css/head/head-logo-nombre.css">
     <link rel="stylesheet" href="css/head/head-nombre.css">
@@ -51,30 +51,56 @@
     <link rel="stylesheet" href="assets/css/contacto/form__text.css">
 
     <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <link rel="stylesheet" href="/assets/css/menu/estilo.css">
     <title>Mi Portafolio</title>
 </head>
 
 <body>
+     <!--! MENU ENCABEZADO -->
+     <div class="contenedor__header">
+        <header>
+            <div class="logo">
+                <a href="#inicio" onclick="seleccionar()"><img src="/assets/img/logo-rjDev.png" class="logo" alt="logo RJ/dev" /></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#hobbies" onclick="seleccionar()">Hobbies</a></li>
+                    <li><a href="#formacion" onclick="seleccionar()">Formacion</a></li>
+                    <li><a href="#xp" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav__responsivo" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
     <div class="tudo">
         <!--! Sección del Menú  -->
-        <section class="menu">
-            <header class="menu__header">
+    <!--     <section class="menu">
+            <header class="logo">
                 <img src="assets/img/logo-rjDev.png" />
             </header>
             <nav class="menu__nav">
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">rjt1608@gmail.com</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#hobbies" onclick="seleccionar()">HOBBIES</a></li>
+                    <li><a href="#formacion" onclick="seleccionar()">FORMACION</a></li>
+                    <li><a href="#xp" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
-                <li class="menu__list__item__contato"><a href="#contacto:">rjt1608@gmail.com</a></li>
+                <div class="nav__responsivo" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
-        </section>
+        </section> -->
         <!--! Sección del Header/Title/Hero -->
-        <section class="title">
+        <section class="title" id="inicio">
             <div class="title__div">
                 <img class="title__profile" src="assets/img/mi-foto.png" />
                 <div class="title__container">
@@ -96,7 +122,8 @@
                                 rel="noopener noreferrer"><img src="assets/img/linkedin.svg" class="pgn"
                                     alt="icono Linkedin" /></a>
                         </li>
-                        <a href="https://www.facebook.com/raul.jimeneztellez" target="_blank"
+                        <li class="title__network__item">
+                            <a href="https://www.facebook.com/raul.jimeneztellez" target="_blank"
                             rel="noopener noreferrer"><img src="assets/img/facebook.svg" class="pgn"
                                 alt="icono Facebook" /></a>
                         </li>

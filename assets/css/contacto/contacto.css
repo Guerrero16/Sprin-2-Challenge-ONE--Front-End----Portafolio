@@ -1,5 +1,5 @@
 .formcontato {
-    background-color: #daf7f3;
+    background-color: #f7e389;
     padding: 4rem 2rem;
 }
 
@@ -13,7 +13,7 @@
 
 @media (max-width:768px) {
     .formcontato {
-        padding: 2rem;
+        padding: 5rem;
     }
 
     .formcontato__contacto {

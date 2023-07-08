@@ -1,5 +1,5 @@
  .hobbies {
-     padding: 2rem;
+    padding: 5rem;
      background-color: var(--color-cuarto);
      display: flex;
      flex-direction: column;

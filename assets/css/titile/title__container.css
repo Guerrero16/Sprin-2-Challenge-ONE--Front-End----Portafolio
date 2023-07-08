@@ -17,8 +17,9 @@
     gap: 2rem;
 }
 
-.title__network__item:hover {
+.title__network__item a :hover {
     color: var(--color-sec);
+    background-color: var(--color-primario);
 }
 
 @media (max-width: 768px) {
